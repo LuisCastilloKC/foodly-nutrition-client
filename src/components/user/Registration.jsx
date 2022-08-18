@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Registration = () => {
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [email, SetEmail] = useState('')
+    const [password, setPassword] = useState('')
+  
+
+
   return (
     <div class="flex items-center justify-center pt-10">
       <div class="w-full max-w-lg">
@@ -20,15 +27,6 @@ const Registration = () => {
           <div>
             <label class="block text-gray-700 text-md font-bold mb-2">
               Last Name
-            </label>
-            <input
-              type="text"
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-          <div>
-            <label class="block text-gray-700 text-md font-bold mb-2">
-              Username
             </label>
             <input
               type="text"
