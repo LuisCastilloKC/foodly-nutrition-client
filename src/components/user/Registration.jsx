@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Registration = () => {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
-    const [email, SetEmail] = useState('')
+    const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
   
 
@@ -63,7 +63,7 @@ const Registration = () => {
               class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
               href="/"
             >
-              Back To Sign
+              Already have an account? Log in
             </a>
           </div>
         </form>
