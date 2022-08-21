@@ -4,6 +4,8 @@ import { signUp } from "../../store/actions/authActions";
 
 const Registration = () => {
     const dispatch = useDispatch()
+    const state = useSelector(state => state)
+    console.log(state)
     const [user, setUser] = useState({
       firstname: "",
       lastname: "",
