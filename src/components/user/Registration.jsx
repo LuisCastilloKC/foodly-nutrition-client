@@ -14,6 +14,13 @@ const Registration = () => {
     const handleSubmit = (event) => {
       event.preventDefault()
       dispatch(signUp(user))
+
+      setUser({
+        firstname: "",
+        lastname: "",
+        email: "",
+        password: ""
+      })
     }
 
   
