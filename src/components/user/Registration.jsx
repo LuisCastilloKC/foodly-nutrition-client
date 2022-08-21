@@ -36,7 +36,7 @@ const Registration = () => {
             <input
               type="text"
               value = {user.lastname}
-              onChange = {(event) => ({...user, lastname: event.target.value})
+              onChange = {(event) => setUser({...user, lastname: event.target.value})
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
@@ -47,7 +47,7 @@ const Registration = () => {
             <input
               type="text"
               value = {user.email}
-              onChange = {(event) => ({...user, email: event.target.value})}
+              onChange = {(event) => setUser({...user, email: event.target.value})}
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
@@ -58,7 +58,7 @@ const Registration = () => {
             <input
               type="password"
               value = {user.password}
-              onChange = {(event) =>({...user, password: event.target.value})}
+              onChange = {(event) => setUser({...user, password: event.target.value})}
               placeholder="**************"
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
             />
