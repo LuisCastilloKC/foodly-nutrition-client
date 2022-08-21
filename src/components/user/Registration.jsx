@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux"
+import { signUp } from "../../store/actions/authActions";
 
 const Registration = () => {
+    const dispatch = useDispatch()
     const [user, setUser] = useState({
       firstname: "",
       lastname: "",
@@ -10,6 +13,7 @@ const Registration = () => {
 
     const handleSubmit = (event) => {
       event.preventDefault()
+      dispatch(signUp(user))
     }
 
   
