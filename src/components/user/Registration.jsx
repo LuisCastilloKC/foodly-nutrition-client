@@ -92,7 +92,7 @@ const Registration = () => {
               className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
               href="/"
             >
-              Already have an account? Log in
+              Already have an account? Login
             </a>
           </div>
         </form>
