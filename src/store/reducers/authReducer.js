@@ -10,6 +10,7 @@ const initialState = {
 
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
+        case "USER_LOADED":
         case "SIGN_UP": alert("welcome")
         const user = jwtDecode(action.token)
         console.log(user)
